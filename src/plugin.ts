@@ -4,6 +4,7 @@ import { rule as orderProperties } from "./rules/order-properties.js";
 import { rule as preferRepositoryShorthand } from "./rules/repository-shorthand.js";
 import { rule as sortCollections } from "./rules/sort-collections.js";
 import { rule as uniqueDependencies } from "./rules/unique-dependencies.js";
+import { rule as validDependencyVersions } from "./rules/valid-dependency-versions.js";
 import { rule as validLocalDependency } from "./rules/valid-local-dependency.js";
 import { rule as validName } from "./rules/valid-name.js";
 import { rule as validPackageDef } from "./rules/valid-package-def.js";
@@ -22,6 +23,7 @@ const rules = {
 	"repository-shorthand": preferRepositoryShorthand,
 	"sort-collections": sortCollections,
 	"unique-dependencies": uniqueDependencies,
+	"valid-dependency-versions": validDependencyVersions,
 	"valid-local-dependency": validLocalDependency,
 	"valid-name": validName,
 	"valid-package-def": validPackageDef,

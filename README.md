@@ -125,6 +125,7 @@ The default settings don't conflict, and Prettier plugins can quickly fix up ord
 | [repository-shorthand](docs/rules/repository-shorthand.md)             | Enforce either object or shorthand declaration for repository.                                    | ✅  | 🔧 |    |
 | [sort-collections](docs/rules/sort-collections.md)                     | Dependencies, scripts, and configuration values must be declared in alphabetical order.           | ✅  | 🔧 |    |
 | [unique-dependencies](docs/rules/unique-dependencies.md)               | Checks a dependency isn't specified more than once (i.e. in `dependencies` and `devDependencies`) | ✅  |    | 💡 |
+| [valid-dependency-versions](docs/rules/valid-dependency-versions.md)   | Checks existence of local dependencies in the package.json                                        | ✅  |    |    |
 | [valid-local-dependency](docs/rules/valid-local-dependency.md)         | Checks existence of local dependencies in the package.json                                        | ✅  |    |    |
 | [valid-name](docs/rules/valid-name.md)                                 | Enforce that package names are valid npm package names                                            | ✅  |    |    |
 | [valid-package-def](docs/rules/valid-package-def.md)                   | Enforce that package.json has all properties required by the npm spec                             | ✅  |    |    |

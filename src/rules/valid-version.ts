@@ -4,6 +4,7 @@ import * as ESTree from "estree";
 import semver from "semver";
 
 import { createRule } from "../createRule.js";
+import { isJSONStringLiteral } from "../utils/predicates.js";
 
 export const rule = createRule({
 	create(context) {
@@ -11,10 +12,7 @@ export const rule = createRule({
 			"Program > JSONExpressionStatement > JSONObjectExpression > JSONProperty[key.value=version]"(
 				node: JsonAST.JSONProperty,
 			) {
-				if (
-					node.value.type !== "JSONLiteral" ||
-					typeof node.value.value !== "string"
-				) {
+				if (!isJSONStringLiteral(node.value)) {
 					context.report({
 						messageId: "type",
 						node: node.value as unknown as ESTree.Node,
